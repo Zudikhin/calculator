@@ -4,6 +4,7 @@
   background-color: white;
   box-sizing: border-box;
   display: flex;
+
   &__main {
     background-color: transparent;
     height: 100%;
@@ -12,6 +13,7 @@
     display: flex;
     position: relative;
   }
+
   &__keyboard {
     display: flex;
     flex-direction: row;
@@ -21,15 +23,16 @@
     width: 100%;
     height: 70%;
     border-top: 1px solid rgba(0, 0, 0, 0.4);
+
     & button {
       width: 25%;
-      height: 20%;
       border: none;
       padding: 0;
       font-weight: 900;
       background-color: transparent;
     }
   }
+
   &__result {
     position: absolute;
     right: 12px;
@@ -37,6 +40,7 @@
     font-size: 30px;
     font-weight: 600;
   }
+
   &__answer {
     position: absolute;
     top: 20%;
@@ -45,10 +49,12 @@
     font-weight: 600;
     word-wrap: break-word;
   }
+
   &__answers {
     display: none;
   }
 }
+
 /* .calculator {
   height: 500px;
   width: 654px;
