@@ -2,11 +2,23 @@ $color: rgb(255, 38, 172);
 
 .orange {
   color: $color;
+
+  @include md {
+    color: black;
+  }
 }
 
 .equal {
   position: relative;
   z-index: 9999;
+
+  @include md {
+    background-color: rgb(228, 159, 95) !important;
+  }
+
+  @include lg {
+    background-color: #d0d0d0 !important;
+  }
 }
 
 .equal::before {
@@ -21,4 +33,8 @@ $color: rgb(255, 38, 172);
   top: 50%;
   margin-top: -30px;
   z-index: -1;
+
+  @include md {
+    display: none;
+  }
 }
